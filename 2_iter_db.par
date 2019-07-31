@@ -1,0 +1,30 @@
+cln_filename            = "tmpfe3.cln"  # Calibrated linelist as output from Xgremlin
+database_name           = "wfe3.db"     # Database name
+csv_export              = "True"        # Export as .csv file, True or False
+
+path_to_STRANS			= "../../2_STRANS/"               # Location of STRANS program (end with /)
+#STRANS_products_loc    = "../../2_STRANS/products/"      # Location of STRANS products moved to. If left blank, will use sa$
+STRANS_products_loc    	= ""
+cln_to_STRANS_format    = "True"        # Create a STRANS input without energy levels, True or False
+cln_to_STRANS_filename  = "tmpfe3.sinp" # If True, name of filename created
+
+working_STRANSinp		= "working.sinp" # Should be located where STRANS program is 
+
+badln_file			= "tmpfe3.badlin"
+badid_filename		= "tmpfe3.badid"
+
+LOPT_input_filename	= "tmpfe3.linp"
+LOPT_par_filename	= "tmpfe3_lopt.par"
+LOPT_lvls_out		= "tmpfe3_lopt.lev"
+LOPT_lines_out 		= "tmpfe3_lopt.lin"
+path_to_LOPT		= "../../4_LOPT/" 	# Relative location of LOPT
+
+LOPT_additions      = "lopt_additions.linp"
+
+formatted_LOPTout	= "working_lopt.out"
+
+compare_Kurucz		= "True" 			# Compare to the Kurucz prediction in LOPT output
+Kurucz_file			= "reference_files/gf2602.lines"
+J_value_integer		= "True"			# are J values integers? True. (Halves? False.)
+Kurucz_alt_label	= "reference_files/k_alt_label.txt"	# Leave blank if no file 
+# Kurucz_alt_label file can provide a key when Kurucz uses alternative labels
