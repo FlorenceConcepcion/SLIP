@@ -9,6 +9,6 @@ The new code I have currently (31 July 2019). These code are particularly tailor
 
 These are more general:
 
-+useful_scripts/linelist_to_STRANSinp.py : Code to create the linelist section of the STRANS input file from an Xgremlin .cln file or linelist in .csv file.
++ useful_scripts/linelist_to_STRANSinp.py : Code to create the linelist section of the STRANS input file from an Xgremlin .cln file or linelist in .csv file.
 + useful_scripts/Elvl_to_STRANSinp.py : Code to create the complete STRANS input (energy levels and linelist) from cln or csv file for linelist and csv file for energy levels. 
 
