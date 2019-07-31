@@ -1,0 +1,57 @@
+cln_filename 		= "tmpfe3.cln" 	
+# Calibrated linelist as output from Xgremlin
+
+stat_unc_method		= "FWHM_100"	
+# Statistical error calc. [fwhm / (2.0 * snr)] limited up to maximum SNR = 100
+
+database_name		= "wfe3.db"		# Database name
+csv_export			= "True"		# Export as .csv file, True or False
+
+path_to_STRANS		= "../../2_STRANS/" 	          
+# Location of STRANS program (end with /)
+
+STRANS_products_loc	= "../../2_STRANS/products/" 	  
+# Location of STRANS products moved to. 
+#If left blank, will use same folder as STRANS_loc
+#STRANS_products_loc    = "" 
+
+cln_to_STRANS_format	= "True"	
+# Create a STRANS input without energy levels, True or False 
+
+cln_to_STRANS_filename	= "tmpfe3.sinp" 
+# If True, name of filename created
+
+Neon_cln 	= "reference_files/Ne12JCP.cln"   # cln Ne1 and Ne2 
+fe1_lev		= "reference_files/fe1_NIST.lev"  # energy levels of fe1
+fe1_sinp	= "fe1.sinp"					# STRANS input file for fe1
+fe2_lev     = "reference_files/Nave_fe2.lev"  # energy levels of fe2
+fe2_sinp    = "fe2.sinp"    				# STRANS input file for fe2
+fe3_lev     = "reference_files/Ekberg_levels.dat"  # energy levels of fe3
+fe3_sinp    = "fe3.sinp"    				# STRANS input file for fe3
+
+###################################################
+# other_element_sinp can contain the list of STRANS input files
+# the names of these elements should be listed in the same order in other_$
+# ensure file is in same folder as STRANS
+other_element_sinp	= ""		# STRANS input file for desired element
+other_element_names	= ""		# desired element name
+
+##############################
+#  stat_unc_method = "FWHM_x" #Statistical error calculated using 
+#  the equation: [fwhm / (2.0 * snr)]. For SNR > x, SNR = x. Default x =100. 
+##########################################################
+# other_element_sinp can contain the list of STRANS input files, 
+# comma seperated
+# the names of these elements should be listed in the same order
+# in other_element_names
+
+########################################################3
+# The calibrated uncertainty is added in quadrature to the 
+# statistical unc to create a total uncertainty. 
+# Calibrated uncertainty is calculated using the calibration 
+# uncertainty (keff_err) and the previous calibration uncertainty
+# (Nave_unc in my case).
+keff_err		= "1.7313E-08"
+Nave_unc		= "4.0e-08"
+
+##### If not using Xgremlin cln, total_unc in diff col
