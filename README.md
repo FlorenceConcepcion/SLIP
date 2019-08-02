@@ -15,35 +15,38 @@ These are more general:
 
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 c_save_iter.py saves: 
 
-XXX.cln                 linelist file (as this does change as we find problem lines!)                
-spec_db.csv         	linelist csv                                                                
--------------------------------------------------------------------------------------------- 
-XXX.badid            	file with bad identifications from STRANS                                  
-XXX.badlin           	file with bad spectral lines containing reasons why they are bad and a tag  
-1_init_db.par      		parameter file for python script a_init_db.py                             
-2_iter_db.par      		parameter file for python script b_iter_db.py                           
--------------------------------------------------------------------------------------------- 
-XXX_work.sinp      		working STRANS input                                                        
-working.lines        	working STRANS identified lines output                                     
-working.out          	working STRANS output, predicted lines                                      
--------------------------------------------------------------------------------------------- 
-lopt_additions.linp 	lines added manually to LOPT (as certain lines are removed from STRANS inp) 
-XXX.linp          		working LOPT input                                                          
-XXX_lopt.lev     		working LOPT output levels identified                                       
-XXX_lopt.lin     		working LOPT output lines used                                             
-working_lopt.out    	formatted LOPT output                                                       
--------------------------------------------------------------------------------------------- 
-For the use of LEVHAMS, these 5 files should be saved for every iteration:
 
- .bat       			LEVHAMD: Batch file to run LEVHAMD_64 with input file:       
- .inp       			LEVHAMD: This file helps keeps a record of the parameters used      
- .lev       			LEVHAMD: The file containing levels       
- .lines     			LEVHAMD: The file containing lines       
- .out       			LEVHAMD: The output file containing predicted levels.   
+|file name                |  description |
+|-------------------------|-------------------------------------------------------------------------- |
+|XXX.cln             		   |      linelist file (as this does change as we find problem lines!)              |   
+|spec_db.csv         		   |  	linelist csv                                                                 |
+|_________________________|_________________________ |
+|XXX.badid           		   |   	file with bad identifications from STRANS                             |      
+|XXX.badlin         		    |   	file with bad spectral lines containing reasons why they are bad and a tag   |
+|1_init_db.par      		    | 		parameter file for python script a_init_db.py                              |
+|2_iter_db.par      		    | 		parameter file for python script b_iter_db.py                            |
+|_________________________|_________________________  |
+|XXX_work.sinp      		    | 		working STRANS input                                                       |  
+|working.lines       		   |   	working STRANS identified lines output                               |       
+|working.out         		   |   	working STRANS output, predicted lines                               |        
+|_________________________|_________________________  |
+|lopt_additions.linp   		 |	lines added manually to LOPT (as certain lines are removed from STRANS inp)  |
+|XXX.linp         	    		 | working LOPT input                                                           |
+|XXX_lopt.lev     		   		 |  working LOPT output levels identified                                        | 
+|XXX_lopt.lin     		   		 |  working LOPT output lines used     |
+|                         | Lopt parameter file? |
+|working_lopt.out       		|	 formatted LOPT output |                                                       
+|_________________________|_________________________  |
+| .bat       	    		   	 	|	LEVHAMD: Batch file to run LEVHAMD_64 with input file:        |
+| .inp       	    		 	    |	LEVHAMD: This file helps keeps a record of the parameters used  |     
+| .lev               		 		|	LEVHAMD: The file containing levels        |
+| .lines             		 		|	LEVHAMD: The file containing lines        |
+| .out           		     		|	LEVHAMD: The output file containing predicted levels.    |
+|_________________________|_________________________ |
+| k_alt_label.txt         |  Kurucz alternative label text file    |
 
-
- k_alt_label.txt   Kurucz alternative label text file   
+ 
