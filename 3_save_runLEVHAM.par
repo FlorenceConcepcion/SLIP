@@ -1,0 +1,7 @@
+# For the LEVHAMD parameters, this file contains the files recorded in the "iteration save".
+# For the other parameters, the 2_iter_db.par contains the other files recorded in the "iteration save".
+LEVHAMD_bat	= "workingLEVHAM_wpy.bat" 	# LEVHAMD: Batch file to run LEVHAMD_64 with input file:       
+LEVHAMD_inp 	= "workingLEVHAM.inp" 		# LEVHAMD: This file helps keeps a record of the parameters used      
+LEVHAMD_lev	= "HAMworking.lev" 		# LEVHAMD: The file containing levels       
+LEVHAMD_lines	= "HAMfe3lvl.lines" 		# LEVHAMD: The file containing lines       
+LEVHAMD_out	= "HAMworking.out"		# LEVHAMD: The output file containing predicted levels. 
