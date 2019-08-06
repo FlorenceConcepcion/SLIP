@@ -13,6 +13,9 @@ These are more general:
 + useful_scripts/Elvl_to_STRANSinp.py : Code to create the complete STRANS input (energy levels and linelist) from cln or csv file for linelist and csv file for energy levels. 
 
 
+"examples" folder provides file samples, displaying appropriate format, etc.  
+
+-------------------------------------------------------------------------------------------
 
 
 
