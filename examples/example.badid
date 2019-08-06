@@ -1,0 +1,8 @@
+# In this file, write the wavenumber of the line to 4 d.p. Lines are matched using this text exactly.
+# The bad identification to be ignored should be written next to it. 
+# Use "working" if it the ion you are currently analysing
+# The values should be seperated by commas, for example: 
+# 50148.3104, fe2, 3P24p y4D1 -5D45g  200 
+#########################################################################
+50148.3104, fe2, 3P24p y4D1 -5D45g  200 
+52980.3924, working, 4G4s 5G2 -  4G4p 5F3 
