@@ -1,0 +1,15 @@
+# In this file, write the wavenumber of the line in the spectrum which are problematic.
+# The wavenumber should be to 4 d.p. Lines are matched using this text exactly. 
+# These lines should be provided a tag to state what is wrong with them. 
+# Clarification of the bad lines can be written on a new line with # before it.
+# The uncertainty of these lines will also be raised for the LOPT fitting.
+# The values should be seperated by commas
+# A, asymmetrical;  B, blend.
+#########################################################################
+# For example:
+# 50089.2761, B								
+#########################################################################
+# These two lines are blended together
+50089.2761, B 
+50089.7551, B
+

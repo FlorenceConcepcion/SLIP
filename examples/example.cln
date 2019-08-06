@@ -1,0 +1,7 @@
+wavenumber correction applied. (wavcorr =    -5.0967e-07        used.)
+  NO air correction applied to wavelengths.
+  NO intensity calibration.
+  line    wavenumber      peak    width      dmp   eq width   itn   H tags     epstot     epsevn     epsodd     epsran  identification
+     1  33889.328532 .4560E+01   227.22   0.0000 0.1103E+04    -7   0    L .82031E+00 .84068E+00 .20523E+00 .00000E+00 no id                          294.991762
+     2  33919.936714 .4230E+01   416.25   0.8170 0.2591E+04   -11   0    L .60938E+00 .47100E+00 .43770E+00 .00000E+00 no id                          294.725560
+     3  34176.386970 .3169E+01   626.98   0.0000 0.2115E+04    -1  16    G .59324E+01 .68966E+01 ********** ********** 34175.934-34176.897 cm-1       292.513921
