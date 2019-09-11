@@ -19,6 +19,9 @@ unc_nave 			= 4.0* np.power(10.0, -8.0)
 
 aln_filename 		= "nfe3.aln"
 cln_filename		= "del.cln"
+
+""" Create uncertainty file? """
+create_unc		= False
 unc_filename		= "del.unc"
 
 ########################################################################
@@ -97,5 +100,6 @@ def create_cln(keff, keff_err):
 		cln_filedata.write(line[:6] + space_corr + str(corrected_wavenum) + line[20:])
 
 
-create_unc_file(keff, keff_err)
+		
 create_cln(keff, keff_err)
+if create_unc == True: create_unc_file(keff, keff_err)
